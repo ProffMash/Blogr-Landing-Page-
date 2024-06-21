@@ -1,0 +1,30 @@
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 0 85px;
+
+  &__brand {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-around;
+
+    .footer__section {
+      h4 {
+        margin-bottom: 1rem;
+      }
+
+      a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

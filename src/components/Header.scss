@@ -1,0 +1,133 @@
+.header {
+  background: #ff7e5f;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem; 
+  border-radius: 0 0 0 85px;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem; 
+
+    &__brand {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    &__links {
+      display: flex;
+      align-items: center;
+
+      a {
+        margin: 0 1rem;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .dropdown {
+        position: relative;
+        margin-left: 1rem;
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+
+          a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-weight: normal;
+
+            &:hover {
+              background-color: #f1f1f1;
+            }
+          }
+        }
+
+        &:hover .dropdown-content {
+          display: block;
+        }
+      }
+    }
+
+    &_actions {
+      display: flex;
+
+      .login, .signup {
+        margin: 0 0.5rem;
+        padding: 0.5rem 1rem;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .login{
+        background-color: #ff7e5f;
+        color:#fff;
+        margin: 0 0.5rem;
+        padding: 0.5rem 1rem;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .signup {
+        background-color: white;
+        color: #ff7e5f;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .header_content {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 5rem; 
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .header_buttons {
+      .start-free, .learn-more {
+        margin: 0 0.5rem;
+        padding: 1rem 2rem;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      .start-free {
+        background-color: white;
+        color: #ff7e5f;
+        border-radius: 30px;
+      }
+
+      .learn-more {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 30px;
+      }
+    }
+  }
+}

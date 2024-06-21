@@ -1,0 +1,51 @@
+.state-of-art {
+  background-color: #3c3d3f;
+  // padding: 4rem 5rem;
+
+  text-align: left;
+  margin-bottom: 4rem; 
+  border-radius: 0 85px 0 85px;
+  height:400px;
+  padding-top: 0;
+  // align-items: start;
+  // display:flex;
+  // justify-content: center;
+
+  &__content {
+    display: flex;
+    align-items: center; 
+
+    .state-of-art__image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+
+      img {
+        width: 80%; 
+        height: auto;
+        border-radius: 10px;
+      }
+    }
+
+    .art {
+      flex: 1;
+      padding-left: 2rem;
+      align-items: start;
+      // display:flex;
+      justify-content: center; 
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color:#fff;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #f1f1f1;
+      }
+    }
+  }
+}
